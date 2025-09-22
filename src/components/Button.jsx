@@ -1,12 +1,14 @@
-function Button({ onClick, children }) {
+import React from "react";
+
+const Button = ({ onClick, children }) => {
   return (
     <button
       onClick={onClick}
-      className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg mt-2"
+      className="ml-2 px-4 py-2 rounded-lg bg-sky-500 text-white font-semibold hover:bg-sky-600 transition"
     >
       {children}
     </button>
   );
-}
+};
 
 export default Button;
